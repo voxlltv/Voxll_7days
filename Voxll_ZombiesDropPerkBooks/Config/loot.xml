@@ -1,0 +1,11 @@
+<Voxll_ZombiesDropPerkBooks>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='70']">
+		<item group='perkBooks' prob='10'/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootcontainer[@id='71']">
+		<item group='perkBooks' prob='10'/>
+	</append>
+
+</Voxll_ZombiesDropPerkBooks>

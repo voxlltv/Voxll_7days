@@ -1,0 +1,13 @@
+<Voxll_GoldJumpBoots>
+
+	<append xpath="/buffs">
+		<buff name="buffGoldBoots" hidden="true"> <stack_type value="ignore"/> <duration value="0"/> </buff>
+	</append>
+
+	<insertAfter xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @value='.02121']" >
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$impactSpeed" operation="subtract" value="0.35">
+			<requirement name="HasBuff" buff="buffGoldBoots"/>
+		</triggered_effect>
+	</insertAfter>
+	
+</Voxll_GoldJumpBoots>

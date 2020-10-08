@@ -1,0 +1,4 @@
+<Voxll_NerfExplosions>
+	<set xpath="/blocks/block/property[@class='Explosion']/property[@name='BlockDamage']/@value">0</set>
+</Voxll_NerfExplosions>
+

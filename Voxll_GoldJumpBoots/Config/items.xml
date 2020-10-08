@@ -1,0 +1,51 @@
+<Voxll_GoldJumpBoots>
+
+    <append xpath="/items">
+	
+		<item name="goldJumpBoots">
+			<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
+			<property name="EconomicValue" value="0"/>
+			
+			<!-- new -->
+			<property name="CustomIcon" value="armorMilitaryBoots"/>
+			<property name="CustomIconTint" value="255,204,64"/>
+			
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
+			<property name="EquipSlot" value="Feet"/>
+			
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="0" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.6,13"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
+
+				<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.01" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.01" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.562"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".126,.156" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".04" tags="buffInfectionCatch"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
+				
+				<passive_effect name="JumpStrength" operation="perc_add" value="2.8"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.75" tags="jumping"/>
+				
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffGoldBoots"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffGoldBoots"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffDontBreakMyLeg"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffDontBreakMyLeg"/>
+			</effect_group>
+			
+			<property class="UMA">
+				<property name="Mesh" value="armor_kevlar_boots"/>
+				<property name="Overlay0" value="armor_kevlar_boots"/>
+				<property name="Layer" value="0"/>
+				<property name="UISlot" value="Footwear"/>
+			</property>
+		</item>
+	
+	</append>
+	
+</Voxll_GoldJumpBoots>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="Voxll_MakeArrowsGreatAgain" />
+		<Description value="Makes arrows much more powerful." />
+		<Author value="Voxll" />
+		<Version value="1.0" />
+	</ModInfo>
+</xml>

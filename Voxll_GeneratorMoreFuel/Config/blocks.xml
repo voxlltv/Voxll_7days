@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Voxll_GeneratorMoreFuel>
+
+	<set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxFuel']/@value">20000</set> 
+
+</Voxll_GeneratorMoreFuel>

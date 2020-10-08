@@ -1,0 +1,98 @@
+<Voxll_NerfExplosions>
+
+	<!-- Nerf all explosives to prevent players from ruining the map -->
+	
+	<!-- thrownAmmoPipeBomb -->
+	<remove xpath="/items/item[@name='thrownAmmoPipeBomb']/effect_group" />
+	<append xpath="/items/item[@name='thrownAmmoPipeBomb']">
+		<effect_group tiered="false">
+			<passive_effect name="BlockDamage" operation="base_set" value="0"/><display_value name="dExDamageBlock" value="0"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="253"/><display_value name="dExDamageEntity" value="230"/>
+			<display_value name="dExRadius" value="4"/>
+			<display_value name="dFuseTime" value="4"/>
+		</effect_group>
+	</append>
+	
+	<!-- thrownGrenadeContact -->
+	<remove xpath="/items/item[@name='thrownGrenadeContact']/effect_group" />
+	<append xpath="/items/item[@name='thrownGrenadeContact']">
+		<effect_group tiered="false">
+			<passive_effect name="BlockDamage" operation="base_set" value="0"/><display_value name="dExDamageBlock" value="0"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="341"/><display_value name="dExDamageEntity" value="310"/>
+			<display_value name="dExRadius" value="5"/>
+		</effect_group>
+	</append>
+	
+	<!-- thrownGrenade -->
+	<remove xpath="/items/item[@name='thrownGrenade']/effect_group" />
+	<append xpath="/items/item[@name='thrownGrenade']">
+		<effect_group tiered="false">
+			<passive_effect name="BlockDamage" operation="base_set" value="0"/><display_value name="dExDamageBlock" value="0"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="341"/><display_value name="dExDamageEntity" value="310"/>
+			<display_value name="dExRadius" value="5"/>
+			<display_value name="dFuseTime" value="3"/>
+		</effect_group>
+	</append>
+	
+	<!-- thrownTimedCharge -->
+	<remove xpath="/items/item[@name='thrownTimedCharge']/effect_group" />
+	<append xpath="/items/item[@name='thrownTimedCharge']">
+		<effect_group tiered="false">
+			<passive_effect name="BlockDamage" operation="base_set" value="-5000"/><display_value name="dExDamageBlock" value="-5000"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="-5000"/><display_value name="dExDamageEntity" value="-5000"/>
+			<display_value name="dExRadius" value="0"/>
+			<display_value name="dFuseTime" value="4"/>
+		</effect_group>
+	</append>
+	
+	<!-- thrownDynamite -->
+	<remove xpath="/items/item[@name='thrownDynamite']/effect_group" />
+	<append xpath="/items/item[@name='thrownDynamite']">
+		<effect_group tiered="false">
+			<passive_effect name="BlockDamage" operation="base_set" value="-5000"/><display_value name="dExDamageBlock" value="-5000"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="-5000"/><display_value name="dExDamageEntity" value="-5000"/>
+			<display_value name="dExRadius" value="0"/>
+			<display_value name="dFuseTime" value="4"/>
+		</effect_group>
+	</append>
+	
+	<!-- thrownAmmoMolotovCocktail -->
+	<remove xpath="/items/item[@name='thrownAmmoMolotovCocktail']/effect_group" />
+	<append xpath="/items/item[@name='thrownAmmoMolotovCocktail']">
+		<effect_group tiered="false">
+			<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="positionAOE" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="positionAOE" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="2.7" buff="buffBurningMolotov"/>
+		
+			<passive_effect name="BlockDamage" operation="base_set" value="0"/><display_value name="dExDamageBlock" value="0"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="5"/><display_value name="dExDamageEntity" value="5"/>
+			<display_value name="dExRadius" value="3"/>
+			<display_value name="dDuration" value="16"/>
+		</effect_group>
+	</append>
+	
+	<!-- ammoRocketHE -->
+	<remove xpath="/items/item[@name='ammoRocketHE']/effect_group[@name='ammoRocketHE']" />
+	<append xpath="/items/item[@name='ammoRocketHE']">
+		<effect_group name="ammoRocketHE" tiered="false">
+			<passive_effect name="BlockDamage" operation="base_set" value="0" tags="perkDemolitionsExpert"/><display_value name="dExDamageBlock" value="0"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="200" tags="perkDemolitionsExpert"/><display_value name="dExDamageEntity" value="420"/>
+			<passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkDemolitionsExpert"/>
+			<display_value name="dExRadius" value="5"/>
+		</effect_group>
+	</append>
+	
+	<!-- ammoRocketFrag -->
+	<remove xpath="/items/item[@name='ammoRocketFrag']/effect_group[@name='ammoRocketHE']" />
+	<append xpath="/items/item[@name='ammoRocketFrag']">
+		<effect_group name="ammoRocketFrag" tiered="false">
+			<passive_effect name="BlockDamage" operation="base_set" value="0" tags="perkDemolitionsExpert"/><display_value name="dExDamageBlock" value="0"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="200" tags="perkDemolitionsExpert"/><display_value name="dExDamageEntity" value="700"/>
+			<passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkDemolitionsExpert"/>
+			<display_value name="dExRadius" value="6"/>
+		</effect_group>
+	</append>
+	
+</Voxll_NerfExplosions>

@@ -1,0 +1,9 @@
+<Voxll_ZombiesDropPerkBooks>
+	
+	<!-- Higher loot drop probability for all zombies (from 2%-3% up to 10%) -->
+	<set xpath="/entity_classes/entity_class[contains(@name, 'zombie')]/property[contains(@name, 'LootDropProb')]/@value">.10</set>
+	
+	<!-- Make zombie loot stay out longer (from 5 min to 15 min) -->
+	<set xpath="/entity_classes/entity_class[contains(@name, 'EntityLoot')]/property[contains(@name, 'TimeStayAfterDeath')]/@value">900</set>
+	
+</Voxll_ZombiesDropPerkBooks>

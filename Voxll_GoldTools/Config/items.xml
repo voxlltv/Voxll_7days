@@ -1,0 +1,319 @@
+<VoxllGoldTools>
+
+    <append xpath="/items">
+	
+		<!-- meleeToolPickaxeGold -->
+		<item name="meleeToolPickaxeGold"> <!-- T3 Tools -->
+			<property name="Extends" value="meleeToolPickT1IronPickaxe"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="4"/>
+			<property name="Meshfile" value="#Other/Items?Tools/pickaxe_steelPrefab.prefab"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="Weight" value="5"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="ShowQuality" value="false"/>
+			
+			<!-- new -->
+			<property name="CustomIcon" value="meleeToolPickT2SteelPickaxe"/>
+			<property name="CustomIconTint" value="255,204,64"/>
+
+			<property class="Action0">
+				<property name="GrazeStart" value=".5"/>
+				<property name="GrazeEnd" value=".6"/>
+				<property name="SwingDegrees" value="65"/>
+				<property name="SwingAngle" value="180"/>
+				<property name="UseGrazingHits" value="true"/>
+			</property>
+			
+			<property class="Action1">
+				<property name="UsePowerAttackAnimation" value="true"/>
+				<property name="UseGrazingHits" value="true"/>
+				<property name="GrazeStart" value=".4"/>
+				<property name="GrazeEnd" value=".48"/>
+				<property name="SwingDegrees" value="110"/>
+				<property name="SwingAngle" value="90"/>
+			</property>
+			
+			<property name="Group" value="Tools/Traps"/>
+			
+			<effect_group name="meleeToolPickaxeGold">
+				<passive_effect name="EntityDamage" operation="base_set" value="23.2"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="75"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="1" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="1500,1500" tier="1,6" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkMiner69r"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value=".8" tags="terrGravel"/>
+			</effect_group>
+
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="20" tags="secondary"/>
+			</effect_group>
+		</item>
+		
+		<!-- meleeToolFireaxeGold -->
+		<item name="meleeToolFireaxeGold">
+			<property name="Extends" value="meleeToolAxeT1IronFireaxe"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="ShowQuality" value="false"/>
+			
+			<property name="CustomIcon" value="meleeToolAxeT1IronFireaxe"/>
+			<property name="CustomIconTint" value="255,204,64"/>
+			
+			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/steelAxePrefab.prefab"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="Weight" value="5"/>
+
+			<effect_group name="meleeToolFireaxeGold">
+				<passive_effect name="EntityDamage" operation="base_set" value="28.9"/> <!-- meleeToolFireaxeSteel -->
+				<passive_effect name="BlockDamage" operation="base_set" value="86.2"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="1" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="1500,1500" tier="1,6" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkMiner69r"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+				<passive_effect name="HarvestCount" operation="base_set" value=".7" tags="butcherHarvest"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
+			</effect_group>
+			
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="20" tags="secondary"/>
+			</effect_group>
+		</item>
+		
+		<!-- meleeToolSledgehammerGold -->
+		<item name="meleeToolSledgehammerGold">
+			<property name="Tags" value="blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,attStrength,perkSkullCrusher,canHaveCosmetic"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="33"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Melee/SledgeHammer/steelSledgeHammerPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Weight" value="5"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="ShowQuality" value="false"/>
+			
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="metaldestroy1"/>
+			
+			<property name="FuelValue" value="0"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			
+			<property name="CustomIcon" value="meleeWpnSledgeT1IronSledgehammer"/>
+			<property name="CustomIconTint" value="255,204,64"/>
+
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value=".15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+				<property name="Sound_start" value="sledge_swinglight"/>
+				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+
+				<property name="UseGrazingHits" value="true"/>
+				<property name="GrazeStart" value=".515"/>
+				<property name="GrazeEnd" value=".52"/>
+				<property name="SwingDegrees" value="65"/>
+				<property name="SwingAngle" value="160"/>
+				
+				<property class="HitSounds">
+					<property name="Override0" value="organic" param1="metalsolidhitorganic"/>
+				</property>
+				
+				<property class="GrazeSounds">
+					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+				</property>
+			</property>
+			
+			<property class="Action1">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value=".15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+				<property name="Sound_start" value="sledge_swingheavy"/>
+				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+				<property name="UsePowerAttackAnimation" value="true"/>
+
+				<property name="UseGrazingHits" value="true"/>
+				<property name="GrazeStart" value=".515"/>
+				<property name="GrazeEnd" value=".52"/>
+				<property name="SwingDegrees" value="110"/>
+				<property name="SwingAngle" value="90"/>
+				
+				<property class="HitSounds">
+					<property name="Override0" value="organic" param1="metalsolidhitorganic"/>
+				</property>
+				
+				<property class="GrazeSounds">
+					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+				</property>
+			</property>
+			
+			<effect_group name="meleeToolSledgehammerGold">
+				<passive_effect name="EntityDamage" operation="base_set" value="85"/> <!-- meleeToolSledgehammerSteel -->
+				<passive_effect name="BlockDamage" operation="base_set" value="120"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="5" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="1500,1500" tier="1,6" tags="perkSkullCrusher"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkSkullCrusher"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+				<passive_effect name="DismemberChance" operation="base_add" value=".1" tags="primary"/>
+
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
+			</effect_group>
+			
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="20" tags="secondary"/>
+				<passive_effect name="DismemberChance" operation="base_add" value=".3" tags="secondary"/>
+			</effect_group>
+		</item>
+		
+		<!-- meleeToolSledgehammerRed -->
+		<item name="meleeToolSledgehammerRed">
+			<property name="Tags" value="blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,attStrength,perkSkullCrusher,canHaveCosmetic"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="33"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Melee/SledgeHammer/steelSledgeHammerPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Weight" value="5"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="ShowQuality" value="false"/>
+			
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="metaldestroy1"/>
+			
+			<property name="FuelValue" value="0"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			
+			<property name="CustomIcon" value="meleeWpnSledgeT1IronSledgehammer"/>
+			<property name="CustomIconTint" value="204,0,34"/>
+
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value=".15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+				<property name="Sound_start" value="sledge_swinglight"/>
+				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+
+				<property name="UseGrazingHits" value="true"/>
+				<property name="GrazeStart" value=".515"/>
+				<property name="GrazeEnd" value=".52"/>
+				<property name="SwingDegrees" value="65"/>
+				<property name="SwingAngle" value="160"/>
+				
+				<property class="HitSounds">
+					<property name="Override0" value="organic" param1="metalsolidhitorganic"/>
+				</property>
+				
+				<property class="GrazeSounds">
+					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+				</property>
+			</property>
+			
+			<property class="Action1">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value=".15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+				<property name="Sound_start" value="sledge_swingheavy"/>
+				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+				<property name="UsePowerAttackAnimation" value="true"/>
+
+				<property name="UseGrazingHits" value="true"/>
+				<property name="GrazeStart" value=".515"/>
+				<property name="GrazeEnd" value=".52"/>
+				<property name="SwingDegrees" value="110"/>
+				<property name="SwingAngle" value="90"/>
+				
+				<property class="HitSounds">
+					<property name="Override0" value="organic" param1="metalsolidhitorganic"/>
+				</property>
+				
+				<property class="GrazeSounds">
+					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+				</property>
+			</property>
+			
+			<effect_group name="meleeToolSledgehammerRed">
+				<passive_effect name="EntityDamage" operation="base_set" value="125"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="300"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="5" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="1500,1500" tier="1,6" tags="perkSkullCrusher"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkSkullCrusher"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+				<passive_effect name="DismemberChance" operation="base_add" value=".1" tags="primary"/>
+
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
+			</effect_group>
+			
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="20" tags="secondary"/>
+				<passive_effect name="DismemberChance" operation="base_add" value=".3" tags="secondary"/>
+			</effect_group>
+		</item>
+		
+		<!-- meleeToolShovelGold -->
+		<item name="meleeToolShovelGold">
+			<property name="Extends" value="meleeToolShovelT1IronShovel"/>
+			<property name="Tags" value="melee,grunting,medium,tool,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
+			<property name="Meshfile" value="#Other/Items?Tools/shovel_steelPrefab.prefab"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="Material" value="MmeleeToolAllSteel"/>
+			<property name="Weight" value="5"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="ShowQuality" value="false"/>
+			
+			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
+			<property name="CustomIconTint" value="255,204,64"/>
+
+			<effect_group name="meleeToolShovelGold">
+				<passive_effect name="EntityDamage" operation="base_set" value="17.4"/> <!-- meleeToolShovelSteel -->
+				<passive_effect name="BlockDamage" operation="base_set" value="100"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="1" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="1500,1500" tier="1,6" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkMiner69r"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
+			</effect_group>
+			
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="20" tags="secondary"/>
+			</effect_group>
+		</item>
+	
+	</append>
+	
+</VoxllGoldTools>

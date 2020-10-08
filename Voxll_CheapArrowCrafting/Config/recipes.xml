@@ -1,0 +1,141 @@
+<Voxll_CheapArrowCrafting>
+
+	<!-- Make arrows very cheap to craft -->
+
+	<!-- ammoArrowFlaming -->
+	<remove xpath="/recipes/recipe[@name='ammoArrowFlaming']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoArrowFlaming']">
+		<ingredient name="resourceWood" count="1"/>
+		<ingredient name="resourceAnimalFat" count="1"/>
+	</append>
+
+	<!-- ammoBundleArrowFlaming -->
+	<remove xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']">
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceAnimalFat" count="10"/>
+	</append>
+
+	<!-- ammoArrowExploding -->
+	<remove xpath="/recipes/recipe[@name='ammoArrowExploding']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoArrowExploding']">
+		<ingredient name="resourceScrapPolymers" count="1"/>
+		<ingredient name="resourceGunPowder" count="1"/>
+	</append>
+
+	<!-- ammoBundleArrowExploding -->
+	<remove xpath="/recipes/recipe[@name='ammoBundleArrowExploding']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoBundleArrowExploding']">
+		<ingredient name="resourceScrapPolymers" count="10"/>
+		<ingredient name="resourceGunPowder" count="10"/>
+	</append>
+
+	<!-- ammoArrowIron -->
+	<remove xpath="/recipes/recipe[@name='ammoArrowIron']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoArrowIron']">
+		<ingredient name="resourceWood" count="1"/>
+		<ingredient name="resourceScrapIron" count="1"/>
+	</append>
+
+	<!-- ammoBundleArrowIron -->
+	<remove xpath="/recipes/recipe[@name='ammoBundleArrowIron']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoBundleArrowIron']">
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceScrapIron" count="10"/>
+	</append>
+
+	<!-- ammoArrowSteelAP -->
+	<remove xpath="/recipes/recipe[@name='ammoArrowSteelAP']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoArrowSteelAP']">
+		<ingredient name="resourceScrapPolymers" count="1"/>
+	</append>
+
+	<!-- ammoBundleArrowSteelAP -->
+	<remove xpath="/recipes/recipe[@name='ammoBundleArrowSteelAP']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoBundleArrowSteelAP']">
+		<ingredient name="resourceScrapPolymers" count="10"/>
+	</append>
+
+	<!-- ammoArrowStone -->
+	<remove xpath="/recipes/recipe[@name='ammoArrowStone']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoArrowStone']">
+		<ingredient name="resourceRockSmall" count="1"/>
+		<ingredient name="resourceWood" count="1"/>
+	</append>
+
+	<!-- ammoBundleArrowStone -->
+	<remove xpath="/recipes/recipe[@name='ammoBundleArrowStone']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoBundleArrowStone']">
+		<ingredient name="resourceRockSmall" count="10"/>
+		<ingredient name="resourceWood" count="10"/>
+	</append>
+
+	<!-- ammoCrossbowBoltFlaming -->
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']">
+		<ingredient name="resourceScrapPolymers" count="1"/>
+		<ingredient name="resourceAnimalFat" count="1"/>
+	</append>
+
+	<!-- ammoBundleCrossbowBoltFlaming -->
+	<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']">
+		<ingredient name="resourceScrapPolymers" count="10"/>
+		<ingredient name="resourceAnimalFat" count="10"/>
+	</append>
+
+	<!-- ammoCrossbowBoltExploding -->
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltExploding']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoCrossbowBoltExploding']">
+		<ingredient name="resourceScrapPolymers" count="1"/>
+		<ingredient name="resourceGunPowder" count="1"/>
+	</append>
+
+	<!-- ammoBundleCrossbowBoltExploding -->
+	<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']">
+		<ingredient name="resourceScrapPolymers" count="10"/>
+		<ingredient name="resourceGunPowder" count="10"/>
+	</append>
+
+	<!-- ammoCrossbowBoltIron -->
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltIron']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoCrossbowBoltIron']">
+		<ingredient name="resourceScrapIron" count="1"/>
+		<ingredient name="resourceWood" count="1"/>
+	</append>
+
+	<!-- ammoCrossbowBoltIron -->
+	<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltIron']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltIron']">
+		<ingredient name="resourceScrapIron" count="10"/>
+		<ingredient name="resourceWood" count="10"/>
+	</append>
+
+	<!-- ammoCrossbowBoltSteelAP -->
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP']">
+		<ingredient name="resourceScrapPolymers" count="1"/>
+	</append>
+
+	<!-- ammoBundleCrossbowBoltSteelAP -->
+	<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltSteelAP']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltSteelAP']">
+		<ingredient name="resourceScrapPolymers" count="10"/>
+	</append>
+
+	<!-- ammoCrossbowBoltStone -->
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltStone']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoCrossbowBoltStone']">
+		<ingredient name="resourceRockSmall" count="1"/>
+		<ingredient name="resourceWood" count="1"/>
+	</append>
+
+	<!-- ammoBundleCrossbowBoltStone -->
+	<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltStone']/ingredient" />
+	<append xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltStone']">
+		<ingredient name="resourceRockSmall" count="10"/>
+		<ingredient name="resourceWood" count="10"/>
+	</append>
+
+</Voxll_CheapArrowCrafting>

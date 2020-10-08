@@ -1,0 +1,59 @@
+<Voxll_GoldAuger>
+
+    <append xpath="/items">
+
+		<!-- Powerful auger. Icon is gold. -->
+		<item name="goldAuger">
+			<property name="Tags" value="melee,heavy,tool,motorTool,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
+			<property name="DisplayType" value="motorTool"/>
+			<property name="HoldType" value="20"/>
+			<property name="Meshfile" value="#Other/Items?Tools/augerPrefab.prefab"/>
+			<property name="Material" value="MMotorToolParts"/> <property name="Weight" value="0"/> <!-- no weight -->
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="SoundIdle" value="Auger_Idle"/>
+			<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="EconomicValue" value="0"/> <!-- no economic value -->
+			<property name="ShowQuality" value="false"/>
+
+			<!-- new -->
+			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
+			<property name="CustomIconTint" value="255,204,64"/>  <!-- icon has a gold color -->
+
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Hitmask_override" value="Melee"/>
+				<property name="UseMeleeCrosshair" value="true"/>
+				<property name="Single_magazine_usage" value="false"/>
+				<property name="Magazine_items" value="ammoGasCan"/>
+				<property name="Bullet_material" value="metal"/>
+				<property name="Reload_time" value="1.1"/>  <!-- much faster reload -->
+				<property name="Sound_start" value="Auger_Fire_Start"/>
+				<property name="Sound_repeat" value="Weapons/Motorized/Auger/auger_fire_lp"/>
+				<property name="Sound_end" value="Weapons/Motorized/Auger/auger_fire_end"/>
+				<property name="Sound_empty" value="auger_empty"/>
+				<property name="Sound_reload" value="Auger_Reload"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
+				<property name="SupportHarvesting" value="true"/>
+				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+			</property>
+
+			<effect_group name="meleeToolPickT3Auger">
+				<passive_effect name="EntityDamage" operation="base_set" value="4.2" />
+				<passive_effect name="BlockDamage" operation="base_set" value="500" />  <!-- high damage to blocks -->
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="300" />
+				<passive_effect name="DegradationMax" operation="base_set" value="1400,4200" />
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" /> <!-- does not degrade. never need to repair. -->
+				<passive_effect name="MaxRange" operation="base_set" value="2.35" />
+				<passive_effect name="BlockRange" operation="base_set" value="3.5" />
+
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1000" />
+				<passive_effect name="MagazineSize" operation="base_set" value="20000" />
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" />
+			</effect_group>
+		</item>
+	
+	</append>
+	
+</Voxll_GoldAuger>

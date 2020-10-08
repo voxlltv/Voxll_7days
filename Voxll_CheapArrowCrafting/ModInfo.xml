@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="Voxll_CheapArrowCrafting" />
+		<Description value="Makes arrows cheap to craft." />
+		<Author value="Voxll" />
+		<Version value="1.0" />
+	</ModInfo>
+</xml>

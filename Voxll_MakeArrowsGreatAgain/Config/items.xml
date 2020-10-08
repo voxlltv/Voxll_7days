@@ -1,0 +1,70 @@
+<Voxll_MakeArrowsGreatAgain>
+
+	<!-- gunBowT0PrimitiveBow -->
+	<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/effect_group[@name='gunBowT0PrimitiveBow']/passive_effect[@name='DamageFalloffRange' and @operation='base_set']/@value">50</set>
+	<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/effect_group[@name='gunBowT0PrimitiveBow']/passive_effect[@name='MaxRange' and @operation='base_set']/@value">125</set>
+	<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/effect_group[@name='gunBowT0PrimitiveBow']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">.9</set>
+	<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/effect_group[@name='gunBowT0PrimitiveBow']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">100</set>
+	<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/effect_group[@name='gunBowT0PrimitiveBow']/passive_effect[@name='ReloadSpeedMultiplier' and @operation='base_set']/@value">.9</set>
+
+	<!-- gunBowT1WoodenBow -->
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group[@name='gunBowT1WoodenBow']/passive_effect[@name='DamageFalloffRange' and @operation='base_set']/@value">75</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group[@name='gunBowT1WoodenBow']/passive_effect[@name='MaxRange' and @operation='base_set']/@value">150</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group[@name='gunBowT1WoodenBow']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">.9</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group[@name='gunBowT1WoodenBow']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">125</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group[@name='gunBowT1WoodenBow']/passive_effect[@name='ReloadSpeedMultiplier' and @operation='base_set']/@value">.9</set>
+
+	<!-- gunBowT3CompoundBow -->
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/effect_group[@name='gunBowT3CompoundBow']/passive_effect[@name='DamageFalloffRange' and @operation='base_set']/@value">100</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/effect_group[@name='gunBowT3CompoundBow']/passive_effect[@name='MaxRange' and @operation='base_set']/@value">300</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/effect_group[@name='gunBowT3CompoundBow']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">.9</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/effect_group[@name='gunBowT3CompoundBow']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">200</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/effect_group[@name='gunBowT3CompoundBow']/passive_effect[@name='ReloadSpeedMultiplier' and @operation='base_set']/@value">.9</set>
+
+	<!-- gunBowT1IronCrossbow -->
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='gunBowT1IronCrossbow']/passive_effect[@name='DamageFalloffRange' and @operation='base_set']/@value">75</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='gunBowT1IronCrossbow']/passive_effect[@name='MaxRange' and @operation='base_set']/@value">150</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='gunBowT1IronCrossbow']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">.9</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='gunBowT1IronCrossbow']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">125</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='gunBowT1IronCrossbow']/passive_effect[@name='ReloadSpeedMultiplier' and @operation='base_set']/@value">.9</set>
+
+	<!-- gunBowT3CompoundCrossbow -->
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='DamageFalloffRange' and @operation='base_set']/@value">100</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='MaxRange' and @operation='base_set']/@value">300</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">.9</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">200</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='ReloadSpeedMultiplier' and @operation='base_set']/@value">.9</set>
+
+	<!-- ammoArrowStone -->
+	<set xpath="/items/item[@name='ammoArrowStone']/effect_group[@name='ammoArrowStone']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">70</set>
+
+	<!-- ammoArrowIron -->
+	<set xpath="/items/item[@name='ammoArrowIron']/effect_group[@name='ammoArrowIron']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">170</set>
+
+	<!-- ammoArrowSteelAP -->
+	<set xpath="/items/item[@name='ammoArrowSteelAP']/effect_group[@name='ammoArrowSteelAP']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">250</set>
+
+	<!-- ammoArrowFlaming -->
+	<set xpath="/items/item[@name='ammoArrowFlaming']/effect_group[@name='ammoArrowFlaming']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">250</set>
+
+	<!-- ammoArrowExploding -->
+	<set xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">200</set>
+	<set xpath="/items/item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']/passive_effect[@name='dExDamageEntity' and @operation='base_set']/@value">400</set>
+
+	<!-- ammoCrossbowBoltStone -->
+	<set xpath="/items/item[@name='ammoCrossbowBoltStone']/effect_group[@name='ammoCrossbowBoltStone']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">70</set>
+
+	<!-- ammoCrossbowBoltIron -->
+	<set xpath="/items/item[@name='ammoCrossbowBoltIron']/effect_group[@name='ammoCrossbowBoltIron']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">170</set>
+
+	<!-- ammoCrossbowBoltSteelAP -->
+	<set xpath="/items/item[@name='ammoCrossbowBoltSteelAP']/effect_group[@name='ammoCrossbowBoltSteelAP']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">250</set>
+
+	<!-- ammoCrossbowBoltFlaming -->
+	<set xpath="/items/item[@name='ammoCrossbowBoltFlaming']/effect_group[@name='ammoCrossbowBoltFlaming']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">250</set>
+
+	<!-- ammoCrossbowBoltExploding -->
+	<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">200</set>
+	<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']/passive_effect[@name='dExDamageEntity' and @operation='base_set']/@value">400</set>
+
+</Voxll_MakeArrowsGreatAgain>

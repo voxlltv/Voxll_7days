@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="Voxll_ConcreteDryFast" />
+		<Description value="Makes concrete dry quickly." />
+		<Author value="VoxllTV" />
+		<Version value="1.0" />
+
+	</ModInfo>
+</xml>
